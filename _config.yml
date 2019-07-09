@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: Paul Mains
+subtitle: "Hi, I build the pixels on your web pages"
 description:
 keywords:
-author: John Doe
-language:
-timezone:
+author: Paul Mains
+language: en
+timezone: Europe/London
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://paulmains.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -73,9 +73,66 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/mainsy/mains-hexo-blog.git
+
+theme_config:
+  # Main menu navigation
+  # format: xxx: /xxx/||icon
+  # ---------------
+  menu:
+    home: /||fa fa-home
+    about: /about/||fa fa-heart
+    tags: /tags/||fa fa-tags
+    categories: /categories/||fa fa-folder-open
+  highlight_theme: darker
+  social:
+    fa fa-twitter: https://twitter.com/paulmains
+    fa fa-instagram: https://instagram.com/paulmains
+    fa fa-linkedin: https://www.linkedin.com/in/paulmains/
+    fa fa-github: https://github.com/mainsy
+    fa fa-rss: /atom.xml
+  wordcount:
+    enable: true
+  post_copyright:
+    enable: true
+    license: CC BY-NC-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  sharejs:
+    enable: true
+    sites: facebook,twitter,linkedin
+  since:
+  footer_custom_text:
+  footer_copyright:
+    enable: true
+  announcement:
+    content: I just put this site together!
+  font:
+    enable: true
+    font-family: Lato, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, PingFang SC, Hiragino Sans GB,"Microsoft JhengHei", "MicrMicrosoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif
+    code-font: consolas, Menlo, "PingFang SC", "Microsoft JhengHei","Microsoft YaHei", monospace, Helvetica Neue For Number
+  subtitle: 
+    enable: true
+    sub1: "Full stack software engineer here..."
+    sub2: "... I build pixels."
+  aside:
+    card_author: true
+    card_announcement: true
+    card_recent_post: true
+    card_categories: true
+    card_tags: true
+    card_archives: true
+    card_webinfo: true
+  translate:
+    enable: false
+  runtimeshow:
+    enable: true
+    start_date: 6/27/2019 00:00:00
+  top_img: https://image.shutterstock.com/z/stock-photo-colorful-autumn-season-and-mountain-fuji-with-morning-fog-and-red-leaves-at-lake-kawaguchiko-is-one-1321286417.jpg
+  post_img: https://image.shutterstock.com/z/stock-photo-miyajima-the-famous-floating-torii-gate-in-japan-626248916.jpg
+  default_cover: https://image.shutterstock.com/z/stock-photo-tokyo-november-billboards-in-shinjuku-s-kabuki-cho-district-november-in-tokyo-jp-1012724596.jpg
