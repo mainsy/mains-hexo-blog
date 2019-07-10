@@ -122,12 +122,12 @@ theme_config:
     sub2: "... I build pixels."
   aside:
     card_author: true
-    card_announcement: true
+    card_announcement: false
     card_recent_post: true
     card_categories: true
     card_tags: true
-    card_archives: true
-    card_webinfo: true
+    card_archives: false
+    card_webinfo: false
   translate:
     enable: false
   runtimeshow:

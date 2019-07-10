@@ -6,3 +6,5 @@ tmp/
 yarn.lock
 package-lock.json
 .nyc_output/
+.DS_Store
+themes/.DS_Store
