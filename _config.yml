@@ -15,7 +15,7 @@ timezone: Europe/London
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://paulmains.com
 root: /
-permalink: blog/:category/:title/
+permalink: :category/:title/
 permalink_defaults:
 
 # Directory
@@ -79,7 +79,33 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/mainsy/mains-hexo-blog.git
+  repo: https://github.com/mainsy/mainsy.github.io.git
+  branch: published
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 0
+  hub:
+  content:
+  content_limit: 280
+  content_limit_delim: "..."
+  order_by: -date
+  icon: icon.png
+
+algolia:
+  applicationID: "YZY1LAQH80"
+  apiKey: "262f4777275d1e66232eb2fd8dc857c8"
+  indexName: "prod_blog"
+
+Pwa:
+  enable: true
+  manifest: /manifest.json
+  theme_color: "#fff"
+  apple_touch_icon: /img/pwa/apple-touch-icon.png
+  favicon_32_32: /img/pwa/32.png
+  favicon_16_16: /img/ Pwa/16.png
+  mask_icon: /img/pwa/safari-pinned-tab.svg
 
 theme_config:
   # Main menu navigation
@@ -92,8 +118,8 @@ theme_config:
     categories: /categories/||fa fa-folder-open
   highlight_theme: darker
   social:
-    fa fa-twitter: https://twitter.com/paulmains
-    fa fa-instagram: https://instagram.com/paulmains
+    fa fa-twitter: https://twitter.com/paulmains/
+    fa fa-instagram: https://instagram.com/paulmains/
     fa fa-linkedin: https://www.linkedin.com/in/paulmains/
     fa fa-github: https://github.com/mainsy
     fa fa-rss: /atom.xml
@@ -135,6 +161,7 @@ theme_config:
   runtimeshow:
     enable: true
     start_date: 6/27/2019 00:00:00
-  top_img: https://image.shutterstock.com/z/stock-photo-colorful-autumn-season-and-mountain-fuji-with-morning-fog-and-red-leaves-at-lake-kawaguchiko-is-one-1321286417.jpg
-  post_img: https://image.shutterstock.com/z/stock-photo-miyajima-the-famous-floating-torii-gate-in-japan-626248916.jpg
-  default_cover: https://image.shutterstock.com/z/stock-photo-tokyo-november-billboards-in-shinjuku-s-kabuki-cho-district-november-in-tokyo-jp-1012724596.jpg
+  top_img: https://cdn.jsdelivr.net/gh/mainsy/cdn/photo/fuji_top_img_sample.jpg
+  post_img: https://cdn.jsdelivr.net/gh/mainsy/cdn/photo/miyajima_post_img_sample.jpg
+  default_cover: https://cdn.jsdelivr.net/gh/mainsy/cdn/photo/tokyo_default_cover_sample.jpg
+  avatar: https://cdn.jsdelivr.net/gh/mainsy/cdn/social/twitter_avatar.jpg

@@ -1,0 +1,10 @@
+{
+	"name": "Paul Mains",
+	"theme_color": "#ff4444",
+	"background_color": "#ffffff",
+	"display": "browser",
+	"Scope": "/",
+	"start_url": "/",
+	"icons": null,
+	"splash_pages": null
+}
